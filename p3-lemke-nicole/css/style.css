@@ -1,0 +1,1252 @@
+/*========================================
+
+
+  Universal Styling
+
+
+===========================================*/
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-family: brandon-grotesque, sans-serif;
+}
+
+body, main {
+  overflow-x: hidden;
+}
+
+h1, h4 {
+  text-align: left;
+  font-family: source-sans-pro, sans-serif;
+  font-size: 65px;
+  font-weight: 400;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3, p {
+  text-align: center;
+  font-family: brandon-grotesque, sans-serif;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+p::selection, h1::selection, h2::selection, h3::selection, h4::selection, a::selection, img::selection {
+  background: #F8AC9A;
+}
+
+/*=====================
+
+  Header
+
+=========================*/
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+header nav {
+  float: right;
+  padding: 50px 45px;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav a {
+  color: black;
+  font-family: source-sans-pro, sans-serif;
+  font-size: 28px;
+  padding: 25px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color .2s ease;
+}
+
+header nav a:hover {
+  color: #F6E1D8;
+  font-weight: 900;
+}
+
+/*=====================
+
+  main
+
+=========================*/
+
+main {
+  background-color: #DB7758;
+  width: 100%;
+}
+
+.tophome {
+  height: 800px;
+}
+
+.navlogo {
+  padding: 35px 55px;
+}
+
+.namelogo {
+  text-align: center;
+  padding-top: 175px;
+}
+
+.namelogo img {
+  width: 100%;
+  max-width: 800px;
+}
+
+/*=====================
+
+  what i do...
+
+=========================*/
+
+.whatido {
+  position: relative;
+  background-image: linear-gradient(#171717,#2E2D2B);
+  padding-bottom: 100px;
+  width: 100%;
+  height: 630px;
+}
+
+.widwords {
+  position: relative;
+  bottom: 55px;
+  margin-left: 30px;
+  max-width: 500px;
+}
+
+.branding, .website, .graphic {
+  width: 100%;
+  margin: auto;
+  text-align: right;
+  max-width: 850px;
+}
+.branding h2, .website h2, .graphic h2 {
+  position: absolute;
+  text-align: right;
+  color: white;
+  transition: .3s ease;
+}
+
+.whatido h2:hover {
+  color: #f8ac9a;
+}
+
+.branding h2 {
+  top: 175px;
+  padding-left: 150px;
+}
+
+.website h2 {
+  top: 310px;
+  padding-left: 50px;
+}
+
+.graphic h2 {
+  top: 490px;
+  padding-left: 43px;
+}
+
+.branding img, .website img, .graphic img{
+  position: relative;
+  top: 25px;
+  padding: 3px;
+}
+
+/*=====================
+
+  contact msg...
+
+=========================*/
+
+.emailmsg {
+  background: #DB7758;
+  width: 100%;
+  height: 608px;
+}
+
+.homehighmtn {
+  position: relative;
+  animation: fadeinleft 3s 1;
+}
+
+.homehighmtn img {
+    position:absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.emsg {
+  position: relative;
+  top: 230px;
+}
+.emsg h3{
+  color: white;
+  font-size: 28px;
+}
+
+.email {
+  position: relative;
+  bottom: 320px;
+}
+
+.email a {
+  color: white;
+  text-decoration: none;
+}
+
+.email a h2 {
+  font-size: 50px;
+}
+
+.email h2 {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.email h2:hover, .hvr-grow-rotate:focus, .hvr-grow-rotate:active {
+  -webkit-transform: scale(1.2) rotate(4deg);
+  transform: scale(1.2) rotate(4deg);
+}
+
+.homelowmtn {
+  position: relative;
+  height: 567px;
+  animation: fadeinright 3s 1;
+}
+
+.homelowmtn img {
+  position: absolute;
+  bottom: 0px;
+}
+
+/*=====================
+
+  footer
+
+=========================*/
+footer {
+  position: relative;
+  background: #2E2D2B;
+  bottom: 0;
+  height: 160px;
+  width: 100%;
+}
+
+footer ul li {
+  display: inline;
+}
+
+footer a {
+  color: #EEBF9C;
+  font-family: source-sans-pro, sans-serif;
+  font-size: 28px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer a:hover {
+  color: #DB7758;
+  font-weight: 900;
+  transition: .2s;
+}
+
+.social {
+  text-align: center;
+}
+
+.home {
+  position: absolute;
+  top: 62px;
+  left: 35px;
+}
+
+.footer-logo {
+  position: absolute;
+  top: 27px;
+  right: 45px;
+}
+
+.instagram a {
+  background: url('../images/socialicons.svg') no-repeat;
+  background-size: 800%;
+  position: relative;
+  display: inline-block;
+  top: 55px;
+  right: 10px;
+  height: 59px;
+  width: 59px;
+}
+
+.instagram a:hover {
+  background-position: -59px 0px;
+  transition: .01s;
+}
+
+.linkedin a {
+  background: url('../images/socialicons.svg') no-repeat;
+  background-size: 800%;
+  background-position: -0px -59px;
+  position: relative;
+  display: inline-block;
+  top: 55px;
+  height: 59px;
+  width: 59px;
+}
+
+.linkedin a:hover {
+  background-position: -59px -59px;
+  transition: .01s;
+}
+
+.facebook a {
+  background: url('../images/socialicons.svg') no-repeat;
+  background-size: 800%;
+  background-position: -0px -118px;
+  position: relative;
+  display: inline-block;
+  top: 55px;
+  left: 10px;
+  height: 59px;
+  width: 59px;
+}
+
+.facebook a:hover {
+  background-position: -59px -118px;
+  transition: .01s;
+}
+
+/*====================================================
+
+------------------------------------------------------
+
+  WORK PAGE STYLING
+
+-------------------------------------------------------
+
+=====================================================*/
+/*=====================
+
+  work navigation
+
+=========================*/
+.worknav {
+  transform: rotate(90deg);
+  position: fixed;
+  right: -215px;
+  top: 350px;
+  z-index: 1000;
+}
+
+.worknav li a:hover {
+  color: #F58858;
+  font-weight: 900;
+}
+
+/*=====================
+
+  work main
+
+=========================*/
+.workmain {
+  background: white;
+  max-width: 90%;
+  height: 100%;
+  margin: auto;
+  padding-bottom: 150px;
+}
+
+.worktop {
+  height: 400px;
+}
+
+.worktoplogo {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.workname h2 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.workexamples {
+  text-align: center;
+  max-width: 925px;
+  margin: auto;
+}
+
+.workexamples img {
+  padding: 15px;
+}
+
+.hvr-grow img {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow img:hover {
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
+}
+
+/*=====================
+
+  work footer
+
+=========================*/
+li.whome a {
+  color: white;
+}
+
+li.whome a:hover {
+  color: #F58858;
+}
+
+.whome {
+  position: absolute;
+  top: 62px;
+  left: 35px;
+}
+
+.winstagram a {
+  background: url('../images/socialicons.svg') no-repeat;
+  background-size: 800%;
+  background-position: -240px 0px;
+  position: relative;
+  display: inline-block;
+  top: 55px;
+  right: 10px;
+  height: 60px;
+  width: 60px;
+}
+
+.winstagram a:hover {
+  background-position: -300px -0px;
+  transition: .01s;
+}
+
+.wlinkedin a {
+  background: url('../images/socialicons.svg') no-repeat;
+  background-size: 800%;
+  background-position: -240px -60px;
+  position: relative;
+  display: inline-block;
+  top: 55px;
+  height: 60px;
+  width: 60px;
+}
+
+.wlinkedin a:hover {
+  background-position: -300px -60px;
+  transition: .01s;
+}
+
+.wfacebook a {
+  background: url('../images/socialicons.svg') no-repeat;
+  background-size: 800%;
+  background-position: -240px -120px;
+  position: relative;
+  display: inline-block;
+  top: 55px;
+  left: 10px;
+  height: 60px;
+  width: 60px;
+}
+
+.wfacebook a:hover {
+  background-position: -300px -120px;
+  transition: .01s;
+}
+
+/*====================================================
+
+------------------------------------------------------
+
+  ABOUT PAGE STYLING
+
+-------------------------------------------------------
+
+=====================================================*/
+/*=====================
+
+  aboout navigation
+
+=========================*/
+.aboutnav {
+  transform: rotate(90deg);
+  position: fixed;
+  right: -215px;
+  top: 350px;
+  z-index: 100;
+}
+
+.aboutnav li a:hover {
+  color: #a0b3d8;
+  font-weight: 900;
+}
+
+/*=====================
+
+  about main
+
+=========================*/
+.aboutmain {
+  background: #E3EFFA;
+  width: 100%;
+}
+
+.aboutnamelogo {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.aboutintro {
+  position: relative;
+  max-width: 660px;
+  top: 50px;
+  margin: auto;
+}
+
+.aboutintro img {
+  display: inline;
+  float: right;
+  border: 9px inset #1A1818;
+  border-radius: 9px;
+  position: relative;
+  left: 15px;
+}
+
+p.aboutp {
+  position: relative;
+  right: 15px;
+  top: -8px;
+  text-align: left;
+}
+
+/*=====================
+
+  about experience
+
+=========================*/
+.experience {
+  background: white;
+  width: 100%;
+  height: 650px;
+  margin-top: 150px;
+}
+
+.expwords {
+  position: relative;
+  bottom: 55px;
+  margin-left: 30px;
+  color: black;
+}
+
+.abouthighmtn {
+  position: relative;
+}
+
+.abouthighmtn img {
+    position:absolute;
+    top: 0px;
+    right: 0px;
+}
+
+p.experiencep {
+  position: relative;
+  width: 670px;
+  margin: 150px auto;
+  text-align: left;
+}
+
+/*=====================
+
+  about skills
+
+=========================*/
+
+.skills {
+  background-image: linear-gradient(#E3EFFA,white);
+  width: 100%;
+  height: 900px;
+}
+
+.skwords {
+  position: relative;
+  bottom: 55px;
+  margin-left: 30px;
+  color: black;
+  visibility: hidden;
+}
+
+.bskill, .wskill, .gskill {
+  position: relative;
+  max-width: 400px;
+  margin: auto;
+}
+
+.bskill h2, .bskill p {
+  text-align: left;
+}
+
+.wskill h2, .wskill p, .gskill h2, .gskill p {
+  text-align: right;
+}
+
+.bskill {
+  right: 250px;
+  top: 100px;
+}
+
+.wskill, .gskill {
+  left: 250px;
+}
+
+.wskill {
+  top: -155px;
+}
+
+.gskill {
+  top: -70px;
+}
+
+.aboutlowmtn {
+  position: relative;
+  height: 81.5px;
+}
+
+.aboutlowmtn img {
+  position: absolute;
+  bottom: 0px;
+}
+
+/*=====================
+
+  about footer
+
+=========================*/
+li.abthome a {
+  color: white;
+}
+
+li.abthome a:hover {
+  color: #a0b3d8;
+}
+
+.abthome {
+  position: absolute;
+  top: 62px;
+  left: 35px;
+}
+
+.abtinstagram a {
+  background: url('../images/socialicons.svg') no-repeat;
+  background-size: 800%;
+  background-position: -120px 0px;
+  position: relative;
+  display: inline-block;
+  top: 55px;
+  right: 10px;
+  height: 60px;
+  width: 60px;
+}
+
+.abtinstagram a:hover {
+  background-position: -180px -0px;
+  transition: .01s;
+}
+
+.abtlinkedin a {
+  background: url('../images/socialicons.svg') no-repeat;
+  background-size: 800%;
+  background-position: -120px -60px;
+  position: relative;
+  display: inline-block;
+  top: 55px;
+  height: 60px;
+  width: 60px;
+}
+
+.abtlinkedin a:hover {
+  background-position: -180px -60px;
+  transition: .01s;
+}
+
+.abtfacebook a {
+  background: url('../images/socialicons.svg') no-repeat;
+  background-size: 800%;
+  background-position: -120px -120px;
+  position: relative;
+  display: inline-block;
+  top: 55px;
+  left: 10px;
+  height: 60px;
+  width: 60px;
+}
+
+.abtfacebook a:hover {
+  background-position: -180px -120px;
+  transition: .01s;
+}
+
+/*====================================================
+
+------------------------------------------------------
+
+  CONTACT PAGE STYLING
+
+-------------------------------------------------------
+
+=====================================================*/
+
+/*=====================
+
+  contact header
+
+=========================*/
+.contactheader {
+  background-color: white;
+  height: 135px;
+  position: relative;
+}
+
+.contactheader h2 {
+  float: right;
+  padding-right: 50px;
+  padding-top: 35px;
+  font-size: 45px;
+  font-weight: 400;
+  color: #2E2D2B;
+}
+
+/*=====================
+
+  contact main
+
+=========================*/
+.contactmain {
+  position: relative;
+  background-color: #D6E5DB;
+  height: 575px;
+  width: 100%;
+}
+
+.contactsection {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  top: 100px;
+}
+
+.contactlogo {
+  float: left;
+  padding: 30px;
+}
+
+.contactwords {
+  padding-top: 20px;
+}
+
+.contactwords a {
+  text-decoration: none;
+}
+
+.contactmain h1, .contactmain h2, .contactmain h3 {
+  color: #2E2D2B;
+  text-align: center;
+}
+
+.contactmain h2 {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+.contactmain h2:hover, .hvr-skew-forward:focus, .hvr-skew-forward:active {
+  -webkit-transform: skew(-10deg);
+  transform: skew(-10deg);
+}
+
+.contactmain h3 {
+  padding-top: 20px;
+}
+
+.csocial {
+  margin-top: 30px;
+}
+
+main.contactmain ul li {
+  display: inline;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.cinstagram a {
+  background: url('../images/socialicons.svg') no-repeat;
+  background-size: 800%;
+  background-position: -360px 0px;
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin-left: 80px;
+}
+
+.cinstagram a:hover {
+  background-position: -420px -0px;
+  transition: .01s;
+}
+
+.clinkedin a {
+  background: url('../images/socialicons.svg') no-repeat;
+  background-size: 800%;
+  background-position: -360px -60px;
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+}
+
+.clinkedin a:hover {
+  background-position: -420px -60px;
+  transition: .01s;
+}
+
+.cfacebook a {
+  background: url('../images/socialicons.svg') no-repeat;
+  background-size: 800%;
+  background-position: -360px -120px;
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+}
+
+.cfacebook a:hover {
+  background-position: -420px -120px;
+  transition: .01s;
+}
+
+/*=====================
+
+  contact footerr
+
+=========================*/
+.contactfooter {
+  position: relative;
+  background-color: white;
+  height: 100px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.contactfooter a {
+  color: #2E2D2B;
+}
+
+.contactfooter a:hover{
+  color: #5D846D;
+  }
+
+.contacthome {
+  float: left;
+  padding-left: 50px;
+}
+
+.contactabout {
+  float: right;
+  padding-right: 50px;
+}
+
+/*====================================================
+
+------------------------------------------------------
+
+  FORM PAGE STYLING
+
+-------------------------------------------------------
+
+=====================================================*/
+.formmain {
+  position: relative;
+  height: 600px;
+  width: 100%;
+}
+
+.formmain h1 {
+  color: #2E2D2B;
+  text-align: center;
+}
+
+.contact-form {
+  text-align: center;
+}
+
+.reset,
+.submit {
+  display: inline;
+  padding: 5px;
+}
+
+.reset input,
+.submit input {
+  background: #EEBF9C;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input:hover {
+  background: #F8AC9A;
+  transition: .3s;
+}
+
+input {
+  padding: 5px 70px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.mail input {
+  margin-bottom: 12px;
+}
+
+textarea {
+  font-size: 16px;
+  padding: 9px;
+  border-radius: 5px;
+}
+
+.formfooter {
+  position: relative;
+  background-color: white;
+  height: 100px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.formfooter a {
+  color: #2E2D2B;
+}
+
+.formfooter a:hover{
+  color: #F8AC9A;
+  }
+
+/*================================
+
+          CSS Animations
+
+=================================*/
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fadeInRight, .fadeInLeft, .fadeInUp, .fadeInDown {
+    opacity:0;
+    -webkit-transform: translateX(400px);
+    transform: translateX(400px);
+}
+
+.slow {
+    -webkit-animation-duration: 2.5s;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.lessslow {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.delay {
+    -webkit-animation-delay:0.25s;
+    -moz-animation-delay:0.25s;
+    -o-animation-delay:0.25s;
+    animation-delay:0.25s;
+}
+
+.delay-1 {
+    -webkit-animation-delay:0.5s;
+    -moz-animation-delay:0.5s;
+    -o-animation-delay:0.5s;
+    animation-delay:0.5s;
+}
+.delay-2 {
+    -webkit-animation-delay:1.0s;
+    -moz-animation-delay:1.0s;
+    -o-animation-delay:1.0s;
+    animation-delay:1.0s;
+}
+.delay-3 {
+    -webkit-animation-delay:1.5s;
+    -moz-animation-delay:1.5s;
+    -o-animation-delay:1.5s;
+    animation-delay:1.5s;
+}
+
+/*====fadeIn===========*/
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;
+        display:block;}
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;
+        display:block;}
+}
+.fadeIn {
+    opacity:0;
+}
+.fadeIn.go {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+/*====fadeInLeft===========*/
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-800px);
+    }
+    50%{
+       opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-800px);
+    }
+    50%{
+       opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.fadeInLeft{
+    opacity: 0;
+    -webkit-transform: translateX(-800px);
+    transform: translateX(-800px);
+}
+.fadeInLeft.go {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+/*====fadeInRight===========*/
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(800px);
+    }
+    50%{
+       opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(800px);
+    }
+    50%{
+       opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.fadeInRight{
+    opacity: 0;
+    -webkit-transform: translateX(800px);
+    transform: translateX(800px);
+}
+.fadeInRight.go {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+
+/*====fadeInUp===========*/
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(400px);
+    }
+    50%{
+       opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(400px);
+    }
+    50%{
+       opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fadeInUp{
+    opacity: 0;
+    -webkit-transform: translateY(400px);
+    transform: translateY(400px);
+}
+.fadeInUp.go {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+
+/*====fadeInDown===========*/
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-400px);
+    }
+    50%{
+       opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-400px);
+    }
+    50%{
+       opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fadeInDown{
+    opacity: 0;
+    -webkit-transform: translateY(-400px);
+    transform: translateY(-400px);
+}
+.fadeInDown.go {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+/*====growIn===========*/
+@-webkit-keyframes growIn {
+    0% {
+        -webkit-transform: scale(0.2);
+        opacity:0;
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity:1;
+    }
+}
+@keyframes growIn {
+    0% {
+        transform: scale(0.2);
+        opacity:0;
+    }
+    50% {
+        transform: scale(1.2);
+
+    }
+    100% {
+        transform: scale(1);
+        opacity:1;
+    }
+}
+.growIn {
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+    opacity:0;
+}
+.growIn.go{
+    -webkit-animation-name: growIn;
+    animation-name: growIn;
+}
+
+/*====rollIn===========*/
+@-webkit-keyframes rollIn {
+    0% { opacity: 0; -webkit-transform: translateX(-800px) rotate(-360deg); }
+    100% { opacity: 1; -webkit-transform: translateX(0px) rotate(0deg); }
+}
+@keyframes rollIn {
+    0% { opacity: 0; transform: translateX(-800px) rotate(-360deg); }
+    100% { opacity: 1; transform: translateX(0px) rotate(0deg); }
+}
+.rollIn.go {
+    -webkit-animation-name: rollIn;
+    animation-name: rollIn;
+}

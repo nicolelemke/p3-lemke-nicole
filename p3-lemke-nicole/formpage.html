@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Nicole Lemke | Contact Form</title>
+
+    <meta charset="utf-8" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Adobe Font Project Link -->
+    <link rel="stylesheet" href="https://use.typekit.net/izw1gbm.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/ico" href="images/favicon.ico" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZLXV6TN8X"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2ZLXV6TN8X');
+    </script>
+
+  </head>
+
+  <body>
+    <!--- HEADER -->
+    <header class="contactheader animatedParent animateOnce">
+      <h2 class="animated fadeInDown delay-2">NICOLE LEMKE</h2>
+    </header>
+
+    <main class="formmain">
+
+      <section class="contactsection">
+        <div class="contactlogo animatedParent animateOnce">
+          <img src="images/logo3.png" class="animated rollIn lessslow" alt="NL Mtn Logo" title="NL Mtn Logo" width="300" />
+        </div>
+
+        <div class="sayhello animatedParent animateOnce">
+          <h1 class="animated fadeIn lessslow delay-3">say hello!</h1>
+
+          <form class="contact-form animated fadeIn lessslow delay-3" id="test_form" name="test_form" method="post" action="form.php" onsubmit="return validateForm(this)">
+            <div class="first-name input-section">
+              <input type="text" name="req_firstname" id="firstname" placeholder="First Name" />
+            </div>
+
+            <div class="last-name input-section">
+              <input type="text" name="req_lastname" id="lastname" placeholder="Last Name" />
+            </div>
+
+            <div class="mail input-section">
+              <input type="email" name="email" id="email" placeholder="Email Address" />
+            </div>
+
+            <div class="comments input-section">
+              <textarea name="comments" id="comments" cols="35" rows="3" placeholder="Leave a message!"></textarea>
+            </div>
+
+            <div class="reset input-section">
+              <input type="reset" value="Refresh" />
+            </div>
+
+            <div class="submit input-section">
+              <input type="submit" value="Contact Us" />
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="formfooter">
+
+      <nav class="animatedParent animateOnce">
+        <ul class="animated fadeInUp delay-2">
+          <li class="contacthome"><a href="index.html">HOME</a></li>
+          <li><a href="work/work.html">WORK</a></li>
+          <li class="contactabout"><a href="about/about.html">ABOUT</a></li>
+        </ul>
+      </nav>
+
+    </footer>
+
+
+    <!--JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="js/css3-animate-it.js"></script>
+
+  </body>
+</html>
